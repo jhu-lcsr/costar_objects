@@ -2,10 +2,10 @@
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
 
-    <arg name="world_name" value="$(find gazebo_kinect_training)/worlds/gazebo_kitchen.world"/>
+    <arg name="world_name" value="$(find costar_objects)/worlds/gazebo_kitchen.world"/>
   </include>
 
-  <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find gazebo_kinect_training)/urdf/kinect_floating.urdf.xacro'" />
+  <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find costar_objects)/urdf/kinect_floating.urdf.xacro'" />
   <param name="robot_description" command="$(arg urdf_file)" />
 
   
