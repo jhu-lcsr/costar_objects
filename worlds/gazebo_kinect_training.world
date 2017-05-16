@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+      <name>sun</name>
+    </include>
+
+    <light type="point" name="my_light">
+        <pose>0 0 1 0 0 0</pose>
+        <diffuse>1 1 1 1</diffuse>
+        <specular>.3 .3 .3 1</specular>
+        <attenuation>
+          <constant>1</constant>
+          <linear>0</linear>
+          <quadratic>0</quadratic>
+          <range>50</range>
+        </attenuation>
+        <direction>0 0 0</direction>
+        <cast_shadows>true</cast_shadows>
+    </light>
+
+    <include>
+      <uri>model://cirl-background</uri>
+      <name>cirl-background</name>
+      <pose>0.0 0.0 -0.74210 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

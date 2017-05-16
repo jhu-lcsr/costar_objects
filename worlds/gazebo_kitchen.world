@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+      <name>sun</name>
+    </include>
+
+    <light type="point" name="my_light1">
+        <pose>0.5 0 0.5 0 0 0</pose>
+        <diffuse>1 1 1 1</diffuse>
+        <specular>.3 .3 .3 1</specular>
+        <attenuation>
+          <constant>0.5</constant>
+          <linear>0.1</linear>
+          <quadratic>0.1</quadratic>
+          <range>50</range>
+        </attenuation>
+        <direction>0 0 0</direction>
+        <cast_shadows>true</cast_shadows>
+    </light>
+    
+    <light type="point" name="my_light2">
+        <pose>-0.5 0 0.5 0 0 0</pose>
+        <diffuse>1 1 1 1</diffuse>
+        <specular>.3 .3 .3 1</specular>
+        <attenuation>
+          <constant>0.5</constant>
+          <linear>0.1</linear>
+          <quadratic>0.1</quadratic>
+          <range>50</range>
+        </attenuation>
+        <direction>0 0 0</direction>
+        <cast_shadows>true</cast_shadows>
+    </light>
+
+    <light type="point" name="my_light3">
+        <pose>0 -0.5 0.5 0 0 0</pose>
+        <diffuse>1 1 1 1</diffuse>
+        <specular>.3 .3 .3 1</specular>
+        <attenuation>
+          <constant>0.5</constant>
+          <linear>0.1</linear>
+          <quadratic>0.1</quadratic>
+          <range>50</range>
+        </attenuation>
+        <direction>0 0 0</direction>
+        <cast_shadows>true</cast_shadows>
+    </light>
+
+    <light type="point" name="my_light4">
+        <pose>0 0.5 0.5 0 0 0</pose>
+        <diffuse>1 1 1 1</diffuse>
+        <specular>.3 .3 .3 1</specular>
+        <attenuation>
+          <constant>0.5</constant>
+          <linear>0.1</linear>
+          <quadratic>0.1</quadratic>
+          <range>50</range>
+        </attenuation>
+        <direction>0 0 0</direction>
+        <cast_shadows>true</cast_shadows>
+    </light>
+<!--     <include>
+      <uri>model://kitchen_dining</uri>
+      <name>Kitchen Dining</name>
+      <pose>1.465850 2.000000 -0.778883 0 0 0</pose>
+    </include> -->
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>cafe_table</name>
+      <pose>0.0 0.0 -0.778883 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+    </include>
+
+  </world>
+</sdf>
