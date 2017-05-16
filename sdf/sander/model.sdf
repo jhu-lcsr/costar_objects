@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="sander">
+    <pose>0 0 0.016  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0.003716 -0.000965 -0.000552 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.419965e-2</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.430309e-2</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.036295e-2</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://sander/meshes/sander.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://sander/meshes/sander.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

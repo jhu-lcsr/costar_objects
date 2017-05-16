@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="drill_blue_small">
+    <pose>0 0 0.07  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0.0047966 -0.0002168 0.0213772  0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1.19672e-3</ixx>
+          <ixy>0.00656e-3</ixy>
+          <ixz>0.26116e-3</ixz>
+          <iyy>2.08948e-3</iyy>
+          <iyz>0.00124e-3</iyz>
+          <izz>1.01916e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://drill_blue_small/meshes/drill_blue_small.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://drill_blue_small/meshes/drill_blue_small_simplified.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

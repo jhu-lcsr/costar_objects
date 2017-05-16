@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="driller_small">
+    <!-- Initial pose a bit higher than min bounding box z -->
+    <pose>0 0 0.1185  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0.011875 0.003744 -0.013060  0 0 0</pose>
+        <!-- POSE IS CENTER OF MASS -->
+        <mass>1.1</mass>
+        <inertia>
+          <!-- GET THIS VALUE WITH MESHLAB - COMPUTE GEOMETRIC FEATURES ON x10 scaled mesh -->
+          <ixx> 5.40211e-3</ixx>
+          <ixy>-0.00000e-3</ixy>
+          <ixz>-0.0e-3</ixz>
+          <iyy> 5.84891e-3</iyy>
+          <iyz>-0.00000e-3</iyz>
+          <izz> 0.96616e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://driller_small/meshes/driller_small.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://driller_small/meshes/driller_small_simplified.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

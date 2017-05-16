@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="mallet_fiber">
+    <pose>0 0 0.018  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>-0.000529 0.019262 0.016413 0 0 0</pose>
+        <mass>1.2</mass>
+        <inertia>
+          <ixx>2.50330e-3</ixx>
+          <ixy>0.0e-3</ixy>
+          <ixz>0.0e-3</ixz>
+          <iyy>2.42793e-3</iyy>
+          <iyz>0.0e-3</iyz>
+          <izz>0.08997e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_fiber/meshes/mallet_fiber.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_fiber/meshes/mallet_fiber.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

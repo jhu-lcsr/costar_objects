@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="mallet_drilling">
+    <pose>0 0 0.013  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose> 0.001804 0.000644 0.050726 0 0 0</pose>
+        <mass>1.2</mass>
+        <inertia>
+          <ixx>1.51984e-3</ixx>
+          <ixy>-0.00513e-3</ixy>
+          <ixz>0.08213e-3</ixz>
+          <iyy>1.67323e-3</iyy>
+          <iyz>0.03057e-3</iyz>
+          <izz>0.22224e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_drilling/meshes/mallet_drilling.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_drilling/meshes/mallet_drilling.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

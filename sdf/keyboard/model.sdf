@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="keyboard">
+    <pose>0 0 0.0099 1.570796 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0.000509 -0.002477 -0.002392 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.40562e-3</ixx>
+          <ixy>0.00510e-3</ixy>
+          <ixz>0.00626e-3</ixz>
+          <iyy>5.12339e-3</iyy>
+          <iyz>0.00747e-3</iyz>
+          <izz>4.74195e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://keyboard/meshes/keyboard_us-semicompact-angled.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://keyboard/meshes/keyboard_us-semicompact-angled.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

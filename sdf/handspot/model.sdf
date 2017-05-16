@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="handspot">
+    <pose>0 0 0.0796  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>-0.011225 0.134223 0.000015 0 0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>2.425194e-3</ixx>
+          <ixy>0.084619e-3</ixy>
+          <ixz>0.000684e-3</ixz>
+          <iyy>2.633096e-3</iyy>
+          <iyz>-0.000135e-3</iyz>
+          <izz>3.573292e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://handspot/meshes/handspot-mergedgroups.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://handspot/meshes/handspot-mergedgroups.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

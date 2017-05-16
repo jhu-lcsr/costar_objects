@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="mallet_black_white">
+    <pose>0 0 0.017  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>-0.001947 -0.008534 0.079827 0 0 0</pose>
+        <mass>1.2</mass>
+        <inertia>
+          <ixx>3.69501e-3</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>3.83059e-3</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.27085e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_black_white/meshes/mallet_black_white.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_black_white/meshes/mallet_black_white.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

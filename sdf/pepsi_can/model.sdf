@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="pepsi_can">
+    <pose>0 0 0.0505 0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0.002203 0.071741 0.000318 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.027718e-3</ixx>
+          <ixy>0.001015e-3</ixy>
+          <ixz>-0.000001e-3</ixz>
+          <iyy>0.021786e-3</iyy>
+          <iyz>0.000429e-3</iyz>
+          <izz>0.027719e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://pepsi_can/meshes/Pepsi_Can.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://pepsi_can/meshes/Pepsi_Can.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

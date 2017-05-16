@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="old_hammer">
+    <pose>0 0 0.017  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>-0.000918 0.005468 0.027093 0 0 0</pose>
+        <mass>1.2</mass>
+        <inertia>
+          <ixx>2.70381e-3</ixx>
+          <ixy>0.0e-3</ixy>
+          <ixz>0.0e-3</ixz>
+          <iyy>2.79994e-3</iyy>
+          <iyz>0.0e-3</iyz>
+          <izz>0.11579e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://old_hammer/meshes/old_hammer.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://old_hammer/meshes/old_hammer.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

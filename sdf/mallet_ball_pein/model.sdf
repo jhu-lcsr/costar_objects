@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="mallet_ball_pein">
+    <pose>0 0 0.017  0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>-0.003343 0.003731 0.027850 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>2.39517e-3</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>2.34901e-3</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.06056e-3</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_ball_pein/meshes/mallet_ball_pein.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.3</mu>
+              <mu2>0.3</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+         <mesh>
+           <uri>model://mallet_ball_pein/meshes/mallet_ball_pein.stl</uri>
+         </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
