@@ -2,7 +2,7 @@
 <sdf version="1.4">
   <world name="default">
     <include>
-      <uri>model://sun</uri>
+      <uri>package://costar_objects/sdf/sun</uri>
       <name>sun</name>
     </include>
 
@@ -62,12 +62,12 @@
         <cast_shadows>true</cast_shadows>
     </light>
 <!--     <include>
-      <uri>model://kitchen_dining</uri>
+      <uri>package://costar_objects/sdf/kitchen_dining</uri>
       <name>Kitchen Dining</name>
       <pose>1.465850 2.000000 -0.778883 0 0 0</pose>
     </include> -->
     <include>
-      <uri>model://cafe_table</uri>
+      <uri>package://costar_objects/sdf/cafe_table</uri>
       <name>cafe_table</name>
       <pose>0.0 0.0 -0.778883 0 0 0</pose>
       <cast_shadows>true</cast_shadows>

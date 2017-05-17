@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>model://c_clamp/meshes/c-clamp.dae</uri>
+           <uri>package://costar_objects/sdf/c_clamp/meshes/c-clamp.dae</uri>
          </mesh>
         </geometry>
       </visual>
@@ -35,7 +35,7 @@
         </surface>
         <geometry>
          <mesh>
-           <uri>model://c_clamp/meshes/c-clamp.stl</uri>
+           <uri>package://costar_objects/sdf/c_clamp/meshes/c-clamp.stl</uri>
          </mesh>
         </geometry>
       </collision>

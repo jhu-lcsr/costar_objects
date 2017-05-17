@@ -27,14 +27,14 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://hammer/meshes/hammer.dae</uri>
+            <uri>package://costar_objects/sdf/hammer/meshes/hammer.dae</uri>
           </mesh>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://hammer/meshes/hammer.dae</uri>
+            <uri>package://costar_objects/sdf/hammer/meshes/hammer.dae</uri>
           </mesh>
         </geometry>
       </visual>

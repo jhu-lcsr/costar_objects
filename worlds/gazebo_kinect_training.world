@@ -2,7 +2,7 @@
 <sdf version="1.4">
   <world name="default">
     <include>
-      <uri>model://sun</uri>
+      <uri>package://costar_objects/sdf/sun</uri>
       <name>sun</name>
     </include>
 
@@ -21,7 +21,7 @@
     </light>
 
     <include>
-      <uri>model://cirl-background</uri>
+      <uri>package://costar_objects/sdf/cirl-background</uri>
       <name>cirl-background</name>
       <pose>0.0 0.0 -0.74210 0 0 0</pose>
     </include>

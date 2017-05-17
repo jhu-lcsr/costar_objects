@@ -33,7 +33,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://cafe_table/meshes/cafe_table.dae</uri>
+            <uri>package://costar_objects/sdf/cafe_table/meshes/cafe_table.dae</uri>
           </mesh>
         </geometry>
       </visual>

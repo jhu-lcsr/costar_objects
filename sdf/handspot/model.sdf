@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>model://handspot/meshes/handspot-mergedgroups.dae</uri>
+           <uri>package://costar_objects/sdf/handspot/meshes/handspot-mergedgroups.dae</uri>
          </mesh>
         </geometry>
       </visual>
@@ -35,7 +35,7 @@
         </surface>
         <geometry>
          <mesh>
-           <uri>model://handspot/meshes/handspot-mergedgroups.stl</uri>
+           <uri>package://costar_objects/sdf/handspot/meshes/handspot-mergedgroups.stl</uri>
          </mesh>
         </geometry>
       </collision>
