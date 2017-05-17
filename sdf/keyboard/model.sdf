@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/keyboard/meshes/keyboard_us-semicompact-angled.dae</uri>
+           <uri>package://costar_objects/sdf/keyboard/meshes/keyboard_us-semicompact-angled.obj</uri>
          </mesh>
         </geometry>
       </visual>

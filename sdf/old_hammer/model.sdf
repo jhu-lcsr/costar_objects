@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/old_hammer/meshes/old_hammer.dae</uri>
+           <uri>package://costar_objects/sdf/old_hammer/meshes/old_hammer.obj</uri>
          </mesh>
         </geometry>
       </visual>

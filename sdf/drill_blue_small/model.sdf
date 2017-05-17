@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/drill_blue_small/meshes/drill_blue_small.dae</uri>
+           <uri>package://costar_objects/sdf/drill_blue_small/meshes/drill_blue_small.obj</uri>
          </mesh>
         </geometry>
       </visual>

@@ -23,7 +23,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/driller_small/meshes/driller_small.dae</uri>
+           <uri>package://costar_objects/sdf/driller_small/meshes/driller_small.obj</uri>
          </mesh>
         </geometry>
       </visual>

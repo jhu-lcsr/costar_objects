@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/mug/meshes/mug.dae</uri>
+           <uri>package://costar_objects/sdf/mug/meshes/mug.obj</uri>
          </mesh>
         </geometry>
       </visual>

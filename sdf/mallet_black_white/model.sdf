@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/mallet_black_white/meshes/mallet_black_white.dae</uri>
+           <uri>package://costar_objects/sdf/mallet_black_white/meshes/mallet_black_white.obj</uri>
          </mesh>
         </geometry>
       </visual>

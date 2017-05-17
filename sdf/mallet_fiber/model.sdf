@@ -20,7 +20,7 @@
         <cast_shadows>true</cast_shadows>
         <geometry>
          <mesh>
-           <uri>package://costar_objects/sdf/mallet_fiber/meshes/mallet_fiber.dae</uri>
+           <uri>package://costar_objects/sdf/mallet_fiber/meshes/mallet_fiber.obj</uri>
          </mesh>
         </geometry>
       </visual>
