@@ -19,14 +19,14 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <sphere radius="0.02"/>
+        <sphere radius="0.03"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="red"/>
       <geometry>
-        <sphere radius="0.02"/>
+        <sphere radius="0.03"/>
       </geometry>
     </visual>
   </link>
