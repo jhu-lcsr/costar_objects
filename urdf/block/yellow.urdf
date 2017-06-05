@@ -2,7 +2,7 @@
 <robot name="urdf_robot">
 
   <material name="yellow">
-    <color rgba="0 0.8 0.8 1"/>
+    <color rgba="0.8 0.8 0 1"/>
   </material>
 
   <link name="base_link">
