@@ -10,6 +10,7 @@ class GazeboTopicPublisher(object):
     	self.connected = False
     	self.topic_name = topic_name
     	self.message_type = message_type
+        self.loop = trollius.new_event_loop()
 
     @trollius.coroutine
     def publishMessageLoop(self, message):
@@ -23,5 +24,6 @@ class GazeboTopicPublisher(object):
         self.connected = True
 
     def publishMessage(self,message):
+        trollius.set_event_loop(self.loop)
         publisher_message_loop = trollius.get_event_loop()
         publisher_message_loop.run_until_complete(self.publishMessageLoop(message))

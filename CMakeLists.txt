@@ -4,6 +4,17 @@ project(costar_objects)
 find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
   python_pcd
+  std_msgs
+  message_generation
+)
+
+add_service_files(
+  FILES AddObject.srv
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
 )
 
 catkin_package(
@@ -16,4 +27,3 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-
