@@ -20,14 +20,14 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <box size="0.035 0.035 0.035"/>
       </geometry>
     </collision>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <material name="blue"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <box size="0.035 0.035 0.035"/>
       </geometry>
     </visual>
   </link>
