@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="wood_cube">
+    <pose>0 0 0.025 0 0 0</pose>
+    <static>false</static>
+    <link name="body">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>100</mass>
+        <inertia>
+          <ixx>0.0563854797</ixx>
+          <ixy>0e-2</ixy>
+          <ixz>0e-2</ixz>
+          <iyy>0.0563854797</iyy>
+          <iyz>0e-2</iyz>
+          <izz>0.0563854797</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+         <mesh>
+           <uri>model://wood_cube/meshes/wood_cube.dae</uri>
+         </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>100</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+          <box>
+            <size>0.0508 0.0508 0.0508</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
